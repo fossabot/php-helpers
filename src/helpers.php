@@ -1,5 +1,23 @@
 <?php
 
+    if ( ! function_exists('array_is_associative')) {
+        /**
+         * Determine if an array is associative or sequential.
+         *
+         * @param  array $array
+         *
+         * @return bool
+         */
+        function array_is_associative(array $array)
+        {
+            if ([] === $array) {
+                return false;
+            }
+
+            return array_keys($array) !== range(0, count($array) - 1);
+        }
+    }
+
     if ( ! function_exists('append_config')) {
         /**
          * Assign high numeric IDs to a config item to force appending.
