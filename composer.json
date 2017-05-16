@@ -1,7 +1,8 @@
 {
     "name": "jgile/php-helpers",
     "description": "PHP helpers influenced by underscore.js and laravel helpers.",
-    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "helpers", "php", "toolbelt"],
     "authors": [
         {
             "name": "John Gile",
@@ -9,10 +10,12 @@
         }
     ],
     "minimum-stability": "dev",
-    "autoload": {
-        "psr-4" : {
-            "JGile\\PHPHelpers\\" : "src"
-        }
+    "require": {
+        "php": ">=5.4.0"
     },
-    "require": {}
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
 }
