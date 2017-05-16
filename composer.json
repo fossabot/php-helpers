@@ -1,21 +1,26 @@
 {
-    "name": "jgile/php-helpers",
-    "description": "PHP helpers influenced by underscore.js and laravel helpers.",
-    "license": "MIT",
-    "keywords": ["laravel", "helpers", "php", "toolbelt"],
-    "authors": [
-        {
-            "name": "John Gile",
-            "email": "jgile@cliquestudios.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.4.0"
-    },
-    "autoload": {
-        "files": [
-            "src/helpers.php"
-        ]
-    },
+  "name": "jgile/php-helpers",
+  "description": "PHP helpers influenced by underscore.js and laravel helpers.",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "helpers",
+    "php",
+    "toolbelt"
+  ],
+  "authors": [
+    {
+      "name": "John Gile",
+      "email": "jgile@cliquestudios.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ]
+  }
 }
