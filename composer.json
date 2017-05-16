@@ -1,0 +1,18 @@
+{
+    "name": "jgile/php-helpers",
+    "description": "PHP helpers influenced by underscore.js and laravel helpers.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "John Gile",
+            "email": "jgile@cliquestudios.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4" : {
+            "JGile\\PHPHelpers" : "src"
+        }
+    },
+    "require": {}
+}
