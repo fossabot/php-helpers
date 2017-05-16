@@ -1,5 +1,6 @@
 {
   "name": "jgile/php-helpers",
+  "version": 1.0,
   "description": "PHP helpers influenced by underscore.js and laravel helpers.",
   "license": "MIT",
   "keywords": [
