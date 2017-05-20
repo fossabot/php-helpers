@@ -1,6 +1,6 @@
 {
   "name": "jgile/php-helpers",
-  "version": 1.0,
+  "min-stability": "stable",
   "description": "PHP helpers influenced by underscore.js and laravel helpers.",
   "license": "MIT",
   "keywords": [
@@ -15,10 +15,9 @@
       "email": "jgile@cliquestudios.com"
     }
   ],
-  "minimum-stability": "dev",
   "require": {
     "php": ">=5.4.0",
-    "symfony/var-dumper": "*"
+    "symfony/var-dumper": "^3.2"
   },
   "autoload": {
     "files": [
