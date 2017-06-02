@@ -1,6 +1,23 @@
 <?php
 
+	if ( ! function_exists('resolve_path')) {
+		/**
+		 * Resolve the ~ symbol in paths
+		 *
+		 * @return string
+		 */
+		function resolve_path($path)
+		{
+			return str_replace( "~", getenv( "HOME" ), $path );
+		}
+	}
+
     if ( ! function_exists('dd')) {
+        /**
+         * Advanced var_dump WITH die.
+         *
+         * @return void
+         */
         function dd()
         {
             $args = func_get_args();
@@ -8,7 +25,13 @@
             die();
         }
     }
+
     if ( ! function_exists('d')) {
+        /**
+         * Advanced var_dump without die.
+         *
+         * @return void
+         */
         function d()
         {
             $args = func_get_args();
