@@ -59,6 +59,9 @@
 				if ( ! empty( $parts['path'] ) && $parts['path'][0] != '/' ) {
 					$url .= '/';
 				}
+				if( isset( $parts['host'] ) && $url[0].$url[1] === "//" ){
+					$url = "http:" . $url;
+				}
 			}
 			if ( ! empty( $parts['path'] ) ) {
 				$url .= $parts['path'];
